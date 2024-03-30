@@ -3,7 +3,7 @@ global using MarketApp.Services.MarketService;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient<MarketService>();
-builder.Services.AddControllers();
+builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<MarketService>();
 
 var app = builder.Build();
